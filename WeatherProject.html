@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework-5</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&family=PT+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="form-container container container-sm">
+      <h1>WEATHER FORECAST</h1>
+      <div class="form-horizontal">
+        <input
+          type="text"
+          name="..."
+          id="location"
+          class="form-control"
+          placeholder="Enter city..."
+          style="width: 375px; display: inline-block"
+        />
+
+        <button
+          type="click"
+          id="search-city"
+          value="search"
+          class="btn btn-primary button"
+          style="margin-left: 0px; margin-top: -3px; min-height: 36px"
+        >
+          Search
+        </button>
+        <button
+          type="click"
+          id="current-city"
+          value="search"
+          class="btn btn-primary button"
+          style="margin-left: 0px; margin-top: -3px; min-height: 36px"
+        >
+          Current
+        </button>
+      </div>
+      <br />
+      <div class="first-secction">
+        <div class="row">
+          <div class="col first-col-1">
+            <p id="emoji" style="font-size: 75px">☀</p>
+          </div>
+          <div class="col second-col-2">
+            <span class="temperature" id="temperature">12</span>
+            <span class="units">
+              <a href="#" id="celsius-link">ºC</a>|
+              <a href="#" id="fahrenheit-link">ºF</a>
+            </span>
+            <p id="current-information">Sunny</p>
+          </div>
+          <div class="col third-col-3">
+            <h2 id="city-output">Porto</h2>
+            <p id="day-time">Sunday, 20:45</p>
+            <p id="month-date">February, 26</p>
+          </div>
+        </div>
+      </div>
+      <hr style="border: dotted 3px" />
+      <section class="information">
+        <div class="text-center">
+          <div class="row row-info-1">
+            <div class="col" id="precipitation">0%</div>
+            <div class="col-3" id="wind-speed">11 km/h</div>
+            <div class="col" id="sunrise">07:12</div>
+          </div>
+          <div class="row row-info-2">
+            <div class="col">Precipitation</div>
+            <div class="col-3">Wind</div>
+            <div class="col">Sunrise</div>
+          </div>
+          <br />
+          <div class="row row-info-3">
+            <div class="col" id="humidity">72%</div>
+            <div class="col-3" id="index-uv">0/12</div>
+            <div class="col" id="sunset">18:14</div>
+          </div>
+          <div class="row row-info-4">
+            <div class="col">Humidity</div>
+            <div class="col-3">UV index</div>
+            <div class="col">Sunset</div>
+          </div>
+        </div>
+      </section>
+      <hr style="border: dotted 3px" />
+      <section class="next-forecast">
+        <div class="row row-cols-5">
+          <div class="col">
+            <div class="container2 text-center" style="width: 100%">
+              <h5>Mon</h5>
+              <p style="font-size: 40px">🌦</p>
+              <p><strong>18º</strong>| 12º</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="container2 text-center" style="width: 100%">
+              <h5>Tue</h5>
+              <p style="font-size: 40px">🌧</p>
+              <p><strong>18º</strong>| 12º</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="container2 text-center" style="width: 100%">
+              <h5>Wed</h5>
+              <p style="font-size: 40px">🌤</p>
+              <p><strong>16º</strong>| 7º</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="container2 text-center" style="width: 100%">
+              <h5>Thu</h5>
+              <p style="font-size: 40px">🌤</p>
+              <p><strong>13º</strong>| 5º</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="container2 text-center">
+              <h5>Fri</h5>
+              <p style="font-size: 40px">🌦</p>
+              <p><strong>13º</strong>| 6º</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <br />
+  </body>
+  <script src="src/index.js"></script>
+</html>
